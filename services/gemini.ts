@@ -3,8 +3,8 @@ import { MindMapData, Language, DetailedSummary } from "../types.ts";
 
 export const generateMindMapFromBase64 = async (base64Data: string, mimeType: string, language: Language): Promise<MindMapData> => {
   try {
-    // const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-    const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    
     // Using Flash 2.5 for efficiency with large documents
     const model = "gemini-2.5-flash";
 
@@ -74,8 +74,7 @@ export const generateMindMapFromBase64 = async (base64Data: string, mimeType: st
 
 export const generateDetailedSummary = async (mindMapData: MindMapData, language: Language): Promise<DetailedSummary> => {
   try {
-    // const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-    const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
     const model = "gemini-2.5-flash";
 
     let langName = 'French';

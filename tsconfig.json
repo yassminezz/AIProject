@@ -13,8 +13,7 @@
     ],
     "skipLibCheck": true,
     "types": [
-      "node",
-      "vite/client"  //hereeeeeeee
+      "node"
     ],
     "moduleResolution": "bundler",
     "isolatedModules": true,
