@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nodqra - University Study Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'Noto Sans Arabic', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#7C3AED', // Violet-500
+                light: '#A78BFA',  // Violet-400
+                dark: '#6D28D9',   // Violet-600
+              },
+              secondary: {
+                DEFAULT: '#14B8A6', // Teal-500
+                light: '#5EEAD4',  // Teal-300
+                dark: '#0D9488',   // Teal-600
+              },
+              dark: '#111827', // Gray-900
+              light: '#F9FAFB', // Gray-50
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F9FAFB; /* light */
+        background-image:
+          linear-gradient(to right, #F3F4F6 1px, transparent 1px),
+          linear-gradient(to bottom, #F3F4F6 1px, transparent 1px);
+        background-size: 30px 30px;
+      }
+      .rtl\\:flip {
+        transform: scaleX(-1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1"
+  }
+}
+</script>
+<!-- Add Babel for in-browser JSX transpilation -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- This script is generated during Netlify build to expose the API key -->
+    <script src="/env.js"></script>
+    <!-- Main application script, to be transpiled by Babel -->
+    <script type="text/babel" data-type="module" src="/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

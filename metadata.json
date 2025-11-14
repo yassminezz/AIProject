@@ -1,0 +1,5 @@
+{
+  "name": "Nodqra",
+  "description": "An intelligent study companion that converts lecture notes, PDFs, and research papers into interactive, slideable mind maps using Gemini AI for university students.",
+  "requestFramePermissions": []
+}
